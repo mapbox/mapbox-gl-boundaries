@@ -1,5 +1,7 @@
 # mapbox-gl-boundaries
-A Mapbox GL JS plugin that adds tools to work with OpenStreetMap data in your map
+![switch boundaries](https://cloud.githubusercontent.com/assets/126868/15373632/3214b158-1d64-11e6-858b-e005c6f44235.gif)
+A Mapbox GL JS that modifies the boundaries in your map.
+
 
 ### Usage
 __Under Development__
@@ -12,11 +14,11 @@ Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
 
 In your `<script>` add this line after initializing your `map`:
 ```
-new mapboxgl.setBoundaries('IN'); // Switch the disputed area boundaries to the Indian version
+nmapboxgl.removeDispute(map, 'IN');; // Remove the disputed boundaries for India
 ```
 
 ### Features
-- Switch the boundary of a disputed are for a particular country
+- Switch the boundary of a disputed area for a particular country
 
 ### Developing and Testing Mapbox GL JS plugins
 

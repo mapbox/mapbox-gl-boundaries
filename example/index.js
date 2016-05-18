@@ -12,4 +12,6 @@ var map = new mapboxgl.Map({
     hash: true
 });
 
-document.getElementById("switch").onclick = mapboxgl.setBoundaries(map, 'IN');
+document.getElementById("switch").onclick = function(){
+   mapboxgl.removeDispute(map, 'IN');
+}
