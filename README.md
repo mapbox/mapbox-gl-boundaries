@@ -1,11 +1,9 @@
 # mapbox-gl-boundaries
 ![switch boundaries](https://cloud.githubusercontent.com/assets/126868/15373632/3214b158-1d64-11e6-858b-e005c6f44235.gif)
-A Mapbox GL JS that modifies the boundaries in your map.
+A Mapbox GL JS plugin that modifies the boundaries in your map.
 
 
 ### Usage
-__Under Development__
-
 Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
 
 ```
@@ -14,7 +12,7 @@ Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
 
 In your `<script>` add this line after initializing your `map`:
 ```
-nmapboxgl.removeDispute(map, 'IN');; // Remove the disputed boundaries for India
+nmapboxgl.removeDispute(map, 'IN'); // Remove the disputed boundaries for India
 ```
 
 ### Features
