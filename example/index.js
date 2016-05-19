@@ -6,7 +6,7 @@ mapboxgl.accessToken = window.localStorage.getItem('MapboxAccessToken');
 
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
     center: [77.641, 12.978], // starting position
     zoom: 14, // starting zoom
     hash: true
