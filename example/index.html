@@ -8,6 +8,7 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
     <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+    <script src='../dist/mapbox-gl-js-boundaries.js'></script>
     <style>
         body {
             margin: 0;
@@ -40,12 +41,12 @@
 
 <body>
     <div id='map' class='map'></div>
-    <button id="switch" class="button">Switch India borders</button>
+    <button id="switch" class="button">Add claimed boundaries of India</button>
     <script src='bundle.js'></script>
 </body>
 
 <script>
-
+mapboxgl.accessToken = 'pk.eyJ1IjoicGxhbmVtYWQiLCJhIjoiY2lvcG9sYWZlMDA1c3Vwa3FoYXZidTI1eCJ9.iKgFz8YZD1hRjAn_wUPnLA'
 </script
 
 </html>

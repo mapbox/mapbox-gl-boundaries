@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "budo example/index.js --serve=example/bundle.js --live -d",
-    "build": "NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-boundaries.js",
+    "build": "NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-js-boundaries.js",
     "test": "npm run lint && browserify -t envify test/index.js | smokestack -b firefox | tap-status",
     "lint": "eslint --no-eslintrc -c .eslintrc index.js"
   },
@@ -35,8 +35,5 @@
     "tap-status": "^1.0.1",
     "tape": "^4.4.0",
     "uglify-js": "^2.6.1"
-  },
-  "dependencies": {
-    "mapbox-gl": "^0.18.0"
   }
 }

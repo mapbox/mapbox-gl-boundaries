@@ -2,6 +2,8 @@
 ![switch boundaries](https://cloud.githubusercontent.com/assets/126868/15373632/3214b158-1d64-11e6-858b-e005c6f44235.gif)
 A Mapbox GL JS plugin that modifies the boundaries in your map.
 
+### Features
+- Add claimed boundaries to a country with disputed territories for a localized point of view.
 
 ### Usage
 Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
@@ -12,12 +14,9 @@ Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
 
 In your `<script>` add this line after initializing your `map`:
 ```
-mapboxgl.removeDispute(map, 'IN'); // Remove the disputed boundaries for India
+mapboxgl.addClaimedBoundaries(map, 'IN'); // Add the claimed boundaries for India
 ```
 **Note** Currently only India is supported.
-
-### Features
-- Switch the boundary of a disputed area for a particular country
 
 ### Developing and Testing Mapbox GL JS plugins
 
