@@ -42,11 +42,24 @@
 <body>
     <div id='map' class='map'></div>
     <button id="switch" class="button">Add claimed boundaries of India</button>
-    <script src='bundle.js'></script>
 </body>
+
+<!-- Development bundle-->
+<!-- <script src='bundle.js'></script> -->
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoicGxhbmVtYWQiLCJhIjoiY2lvcG9sYWZlMDA1c3Vwa3FoYXZidTI1eCJ9.iKgFz8YZD1hRjAn_wUPnLA'
-</script
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
+    center: [80, 25], // starting position
+    zoom: 3.6, // starting zoom
+    hash: true
+});
+
+document.getElementById("switch").onclick = function(){
+   mapboxgl.addClaimedBoundaries(map, 'IN');
+}
+</script>
 
 </html>
