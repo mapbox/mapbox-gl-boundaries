@@ -14,6 +14,7 @@ In your `<script>` add this line after initializing your `map`:
 ```
 mapboxgl.removeDispute(map, 'IN'); // Remove the disputed boundaries for India
 ```
+**Note** Currently only India is supported.
 
 ### Features
 - Switch the boundary of a disputed area for a particular country
