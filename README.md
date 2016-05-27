@@ -12,7 +12,7 @@ Download the files from `dist/` and add it to your Mapbox Map `<head>` with:
 
 In your `<script>` add this line after initializing your `map`:
 ```
-nmapboxgl.removeDispute(map, 'IN'); // Remove the disputed boundaries for India
+mapboxgl.removeDispute(map, 'IN'); // Remove the disputed boundaries for India
 ```
 
 ### Features

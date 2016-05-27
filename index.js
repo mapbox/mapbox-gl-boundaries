@@ -78,7 +78,7 @@ function removeDispute(map, country) {
 }
 
 
-// Export OSM module
+// Export module
 if (window.mapboxgl) {
     mapboxgl.removeDispute = removeDispute;
 } else if (typeof module !== 'undefined') {
