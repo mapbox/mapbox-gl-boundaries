@@ -1,5 +1,5 @@
 {
-  "name": "mapbox-gl-js-boundaries",
+  "name": "mapbox-gl-boundaries",
   "description": "Switch the disputed boundaries of a Mapbox map using OpenStreetMap data",
   "main": "index.js",
   "directories": {
@@ -7,16 +7,15 @@
   },
   "scripts": {
     "start": "budo example/index.js --serve=example/bundle.js --live -d",
-    "build": "NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-js-boundaries.js",
-    "test": "npm run lint && browserify -t envify test/index.js | smokestack -b firefox | tap-status",
-    "lint": "eslint --no-eslintrc -c .eslintrc index.js"
+    "build": "NODE_ENV=production && browserify index.js | uglifyjs -c -m > dist/mapbox-gl-boundaries.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapbox/mapbox-gl-js-boundaries.git"
+    "url": "git://github.com/mapbox/mapbox-gl-boundaries.git"
   },
   "keywords": [
     "openstreetmap",
+    "boundaries",
     "mapbox",
     "mapboxgl",
     "ui"
