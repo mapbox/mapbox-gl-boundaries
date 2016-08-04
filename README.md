@@ -1,4 +1,4 @@
-# mapbox-gl-js-boundaries
+# mapbox-gl-boundaries
 ![switch boundaries](https://cloud.githubusercontent.com/assets/126868/15373632/3214b158-1d64-11e6-858b-e005c6f44235.gif)
 A Mapbox GL JS plugin that modifies the disputed boundaries in your map.
 
